@@ -1,0 +1,45 @@
+<div class="space-y-4">
+  <div class="flex items-center justify-between">
+    <h2 class="text-lg font-semibold text-gray-800">Kế hoạch & Lệnh sản xuất</h2>
+    <button
+      class="px-3 py-1.5 rounded bg-green-600 text-white text-sm hover:bg-green-700"
+    >
+      + Tổng hợp đơn hàng → LSX
+    </button>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="bg-white shadow rounded p-4">
+      <h3 class="font-semibold mb-2 text-gray-800 text-sm">
+        Kế hoạch sản xuất theo ngày
+      </h3>
+      <div
+        id="daily-plan"
+        class="text-xs text-gray-700 space-y-1"
+        hx-get="/api/production/daily-plan"
+        hx-trigger="load"
+        hx-target="this"
+        hx-swap="innerHTML"
+      >
+        <div class="text-gray-400">Đang tải kế hoạch ngày...</div>
+      </div>
+    </div>
+    <div class="bg-white shadow rounded p-4">
+      <h3 class="font-semibold mb-2 text-gray-800 text-sm">
+        Lệnh sản xuất gần nhất
+      </h3>
+      <div
+        id="recent-orders"
+        class="text-xs text-gray-700 space-y-1"
+        hx-get="/api/production/orders"
+        hx-trigger="load"
+        hx-target="this"
+        hx-swap="innerHTML"
+      >
+        <div class="text-gray-400">Đang tải LSX gần nhất...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

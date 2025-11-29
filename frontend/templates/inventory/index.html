@@ -1,0 +1,51 @@
+<div class="space-y-4">
+  <div class="flex items-center justify-between">
+    <h2 class="text-lg font-semibold text-gray-800">Kho & Tồn kho</h2>
+    <button
+      class="px-3 py-1.5 rounded bg-indigo-600 text-white text-sm hover:bg-indigo-700"
+    >
+      + Phiếu nhập/xuất
+    </button>
+  </div>
+
+  <div class="bg-white shadow rounded p-4 mb-4">
+    <h3 class="font-semibold mb-2 text-gray-800 text-sm">
+      Tồn kho tổng quan (theo kho)
+    </h3>
+    <table class="min-w-full text-xs">
+      <thead class="bg-gray-50 text-gray-600">
+        <tr>
+          <th class="px-3 py-2 text-left">Mã SP</th>
+          <th class="px-3 py-2 text-left">Tên SP</th>
+          <th class="px-3 py-2 text-left">Kho</th>
+          <th class="px-3 py-2 text-right">SL tồn</th>
+        </tr>
+      </thead>
+      <tbody
+        id="inventory-table-body"
+        class="divide-y divide-gray-100"
+        hx-get="/api/inventory"
+        hx-trigger="load"
+        hx-target="this"
+        hx-swap="innerHTML"
+      >
+        <tr>
+          <td colspan="4" class="px-3 py-3 text-center text-gray-400 text-sm">
+            Đang tải tồn kho...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bg-white shadow rounded p-4">
+    <h3 class="font-semibold mb-2 text-gray-800 text-sm">
+      Cảnh báo tồn kho dưới min / HSD sắp hết
+    </h3>
+    <div class="text-xs text-gray-500">
+      (Placeholder) Sau này filter từ dữ liệu tồn kho real-time.
+    </div>
+  </div>
+</div>
+
+

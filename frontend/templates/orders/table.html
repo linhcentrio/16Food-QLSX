@@ -1,0 +1,36 @@
+{% for o in orders %}
+<tr>
+  <td class="px-3 py-2 text-gray-700">{{ o.code }}</td>
+  <td class="px-3 py-2 text-gray-700">
+    {{ o.customer_name }}
+  </td>
+  <td class="px-3 py-2 text-gray-500">{{ o.order_date }}</td>
+  <td class="px-3 py-2 text-gray-500">{{ o.delivery_date }}</td>
+  <td class="px-3 py-2">
+    <span
+      class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium
+      {% if o.status == 'Đã giao' %}
+        bg-green-100 text-green-800
+      {% elif o.status == 'Đang SX' %}
+        bg-blue-100 text-blue-800
+      {% else %}
+        bg-yellow-100 text-yellow-800
+      {% endif %}
+      "
+    >
+      {{ o.status }}
+    </span>
+  </td>
+  <td class="px-3 py-2 text-right text-gray-700">
+    {{ "{:,.0f}".format(o.total_amount|float) }}
+  </td>
+</tr>
+{% else %}
+<tr>
+  <td colspan="6" class="px-3 py-4 text-center text-gray-400 text-sm">
+    Chưa có đơn hàng nào.
+  </td>
+</tr>
+{% endfor %}
+
+

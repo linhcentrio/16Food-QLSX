@@ -1,0 +1,5 @@
+﻿id,ten_kho,ten_loai_kho,dia_chi_kho,ghi_chu,thu_kho,so_dien_thoai,tinh_trang,ngay_tao,nguoi_tao,update
+WH-NVL_01,Kho NVL,Kho tổng,Kho tổng tầng 1,vật tư,Mrs Âu,,Đang hoạt động,,,
+WH-TP_01,Kho thành phẩm,Kho tổng,Kho tổng tầng 1,sản phẩm,Mrs Âu,,Đang hoạt động,,,
+WH-BTP_01,Kho bán thành phẩm,Kho tổng,Kho tổng tầng 1,bán thành phẩm,Mrs Âu,,Đang hoạt động,,,
+WH-SX_01,kho phụ của sx,kho phụ,Kho phụ của sx,,Mr Quý,,Đang hoạt động,,,

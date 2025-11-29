@@ -1,0 +1,40 @@
+<div class="space-y-4">
+  <div class="flex items-center justify-between">
+    <h2 class="text-lg font-semibold text-gray-800">Đơn hàng</h2>
+    <button
+      class="px-3 py-1.5 rounded bg-blue-600 text-white text-sm hover:bg-blue-700"
+    >
+      + Tạo đơn hàng
+    </button>
+  </div>
+
+  <div class="bg-white shadow rounded overflow-hidden">
+    <table class="min-w-full text-sm">
+      <thead class="bg-gray-50 text-gray-600">
+        <tr>
+          <th class="px-3 py-2 text-left">Mã đơn</th>
+          <th class="px-3 py-2 text-left">Khách hàng</th>
+          <th class="px-3 py-2 text-left">Ngày đặt</th>
+          <th class="px-3 py-2 text-left">Hạn giao</th>
+          <th class="px-3 py-2 text-left">Trạng thái</th>
+          <th class="px-3 py-2 text-right">Tổng tiền</th>
+        </tr>
+      </thead>
+      <tbody
+        id="orders-table-body"
+        class="divide-y divide-gray-100"
+        hx-get="/ui/orders/table"
+        hx-trigger="load"
+        hx-swap="innerHTML"
+      >
+        <tr>
+          <td colspan="6" class="px-3 py-4 text-center text-gray-400 text-sm">
+            Đang tải dữ liệu đơn hàng...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+

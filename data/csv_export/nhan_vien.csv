@@ -1,0 +1,7 @@
+﻿id,ho_va_ten,email,ngay_sinh,hinh_anh,bo_phan,phan_quyen,quyen_xem,quyen_sua,quyen_xoa,pass_word,thong_tin,ngay_tao,nguoi_tao,tinh_trang
+NV_001,Cung Ứng 1.6Food,tpcu.16food@gmail.com,,,Cung ứng,,,,,123@456,admin hệ thống QLSX,Fri Apr 05 2024 00:00:00 GMT+0700 (Indochina Time),,Đang hoạt động
+RD_001,R&D,rd.16food@gmail.com,,,R&D,,,,,123@456,,Fri Apr 05 2024 00:00:00 GMT+0700 (Indochina Time),,Đang hoạt động
+KHO_01,Kho tổng,ktk1.16food@gmail.com,,,Kho,,,,,123@456,,Fri Apr 05 2024 00:00:00 GMT+0700 (Indochina Time),,Đang hoạt động
+SA_001,Sale Admin,sale.16food@gmail.com,,,Kinh doanh,,,,,123@456,,Fri Apr 05 2024 00:00:00 GMT+0700 (Indochina Time),,Đang hoạt động
+BOD,BOD,1.6food.ceo@gmail.com,,,BOD,,,,,123@456,"tk của CEO, CTO, các giám đốc",Fri Apr 05 2024 00:00:00 GMT+0700 (Indochina Time),,Đang hoạt động
+AD_001,Admin hệ thống,homanhlinh002@gmail.com,,,KHSX,,,,,Linh4890,tk của admin hệ thống,Fri Apr 05 2024 00:00:00 GMT+0700 (Indochina Time),,Đang hoạt động

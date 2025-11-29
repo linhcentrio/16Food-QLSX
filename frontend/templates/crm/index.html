@@ -1,0 +1,52 @@
+<div class="space-y-4">
+  <div class="flex items-center justify-between">
+    <h2 class="text-lg font-semibold text-gray-800">CRM - Khách hàng & NCC</h2>
+    <button
+      class="px-3 py-1.5 rounded bg-purple-600 text-white text-sm hover:bg-purple-700"
+    >
+      + Thêm khách hàng
+    </button>
+  </div>
+
+  <div class="bg-white shadow rounded p-4 mb-4">
+    <h3 class="font-semibold mb-2 text-gray-800 text-sm">
+      Danh sách khách hàng (tóm tắt)
+    </h3>
+    <table class="min-w-full text-sm">
+      <thead class="bg-gray-50 text-gray-600">
+        <tr>
+          <th class="px-3 py-2 text-left">Mã KH</th>
+          <th class="px-3 py-2 text-left">Tên KH</th>
+          <th class="px-3 py-2 text-left">Cấp</th>
+          <th class="px-3 py-2 text-left">Kênh</th>
+        </tr>
+      </thead>
+      <tbody
+        id="customers-table-body"
+        class="divide-y divide-gray-100"
+        hx-get="/api/crm/customers"
+        hx-trigger="load"
+        hx-swap="innerHTML"
+        hx-target="this"
+      >
+        <tr>
+          <td colspan="4" class="px-3 py-3 text-center text-gray-400 text-sm">
+            Đang tải danh sách khách hàng...
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bg-white shadow rounded p-4">
+    <h3 class="font-semibold mb-2 text-gray-800 text-sm">
+      Nhà cung cấp & lịch sử giá NVL
+    </h3>
+    <div class="text-xs text-gray-500">
+      (Placeholder) Sau này kết hợp <code>supplier</code> +
+      <code>materialpricehistory</code> để phân tích NCC.
+    </div>
+  </div>
+</div>
+
+
